@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement", "UserManagement\UserManagement.csproj", "{BDA2611E-755C-498A-BAA6-B6F272EC998A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Domain", "UserManagement.Domain\UserManagement.Domain.csproj", "{F2F1802B-0D7E-4228-B6F8-F67CF8E5360B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Application", "UserManagement.Application\UserManagement.Application.csproj", "{96417B94-90B6-4215-AA1A-1E249776D5E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Infrastructure", "UserManagement.Infrastructure\UserManagement.Infrastructure.csproj", "{9504D2BE-D846-4437-BCA8-EA4A32119D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildFiles", "BuildFiles", "{80CD548E-F809-4F1E-A1D3-DB5841286065}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose.yml = docker-compose.yml
+	docker-user-management.Dockerfile = docker-user-management.Dockerfile
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigFiles", "ConfigFiles", "{A5F7A0AF-1C6A-4BE5-9494-91309ACD255A}"
+ProjectSection(SolutionItems) = preProject
+	.gitattributes = .gitattributes
+	.gitignore = .gitignore
+	Directory.Build.props = Directory.Build.props
+	global.json = global.json
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{7B3FD896-C92C-410F-BB85-0031D5DBAE71}"
+ProjectSection(SolutionItems) = preProject
+	ReadMe.md = ReadMe.md
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDA2611E-755C-498A-BAA6-B6F272EC998A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA2611E-755C-498A-BAA6-B6F272EC998A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA2611E-755C-498A-BAA6-B6F272EC998A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA2611E-755C-498A-BAA6-B6F272EC998A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F1802B-0D7E-4228-B6F8-F67CF8E5360B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F1802B-0D7E-4228-B6F8-F67CF8E5360B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F1802B-0D7E-4228-B6F8-F67CF8E5360B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F1802B-0D7E-4228-B6F8-F67CF8E5360B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96417B94-90B6-4215-AA1A-1E249776D5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96417B94-90B6-4215-AA1A-1E249776D5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96417B94-90B6-4215-AA1A-1E249776D5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96417B94-90B6-4215-AA1A-1E249776D5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9504D2BE-D846-4437-BCA8-EA4A32119D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9504D2BE-D846-4437-BCA8-EA4A32119D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9504D2BE-D846-4437-BCA8-EA4A32119D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9504D2BE-D846-4437-BCA8-EA4A32119D00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
