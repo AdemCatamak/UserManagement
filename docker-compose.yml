@@ -1,0 +1,33 @@
+version: "3.4"
+
+services:
+
+  user-management-app:
+    image: user-management:latest
+    build:
+      context: ./
+      dockerfile: docker-user-management.Dockerfile
+    ports:
+      - 9999:80
+    depends_on:
+      - user-management-sql-server
+      - user-management-rabbit-mq
+    links:
+      - user-management-sql-server
+      - user-management-rabbit-mq
+
+  user-management-sql-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Passw0rd"
+    expose:
+      - 1433
+    ports:
+      - 9998:1433
+
+  user-management-rabbit-mq:
+    image: rabbitmq:3.7-management
+    expose:
+      - 15672
+      - 5672
