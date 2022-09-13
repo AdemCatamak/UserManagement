@@ -3,6 +3,9 @@
 
 This project has been prepared to set an example for the project structure to be developed with the DDD concept.
 
+You can read more information about structure here:
+https://medium.com/@ademcatamak/layers-in-ddd-projects-bd492aa2b8aa
+
 ## __RUN__
 
 __Way 1__
